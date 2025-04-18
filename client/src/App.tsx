@@ -33,7 +33,7 @@ export class App extends Component<AppProps, AppState> {
   }
 
   render = (): JSX.Element => {
-    if (!this.state.buildings) {
+    if (this.state.buildings === undefined) {
       return <p>Loading building information...</p>;
     } else {
       return <div>
@@ -50,7 +50,7 @@ export class App extends Component<AppProps, AppState> {
 
   /** Returns SVG elements for the two end points. */
   renderEndPoints = (): Array<JSX.Element> => {
-    if (!this.state.endPoints) {
+    if (this.state.endPoints === undefined) {
       return [];
     } else {
       const [start, end] = this.state.endPoints;
@@ -65,7 +65,7 @@ export class App extends Component<AppProps, AppState> {
 
   /** Returns SVG elements for the edges on the path. */
   renderPath = (): Array<JSX.Element> => {
-    if (!this.state.path) {
+    if (this.state.path === undefined) {
       return [];
     } else {
       const elems: Array<JSX.Element> = [];
