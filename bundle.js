@@ -33843,7 +33843,7 @@ exports.isRecord = isRecord;
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "./";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -33855,4 +33855,4 @@ exports.isRecord = isRecord;
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.68c9a044277550be4b00.js.map
+//# sourceMappingURL=bundle.js.map
