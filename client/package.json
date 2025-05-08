@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "CSE 331 HW3",
   "main": "",
+  "homepage": "https://rinay06.github.io/campuspaths",
   "scripts": {
     "start": "webpack-dev-server --config src/webpack.config.js",
-    "lint": "comfy-tslint src/*.{ts,tsx}"
+    "build": "webpack --config src/webpack.config.js",
+    "lint": "comfy-tslint src/*.{ts,tsx}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +25,7 @@
     "copy-webpack-plugin": "^5.0.1",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.0",
     "ignore-styles": "^5.0.1",
     "mini-css-extract-plugin": "^2.6.1",
