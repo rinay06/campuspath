@@ -10,6 +10,7 @@ const info = {
   TITLE: 'Campus Paths'
 }
 
+
 const config = {
   mode: 'development',
   devtool: 'source-map',
@@ -68,9 +69,9 @@ const config = {
   },
 
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    publicPath: './'
   },
 
   plugins: [
